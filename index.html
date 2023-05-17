@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <!-- css sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    >
+    <!--jquery link-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery.ui.sound.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <!--Timer-->
+      <div id="work-timer" class="timer">
+        <div id="time-one">
+          <p id="w_hours">00</p>
+          <p class="semicolon">:</p>
+          <p id="w_minutes">25</p>
+          <p class="semicolon">:</p>
+          <p id="wseconds">00</p>
+        </div>
+
+        <div id="cont-btn">
+          <div id="rounding-one">
+            <button id="start" class="btn">Start</button>
+          </div>
+          <div id="rounding-two">
+            <button id="stop" class="btn">Stop</button>
+          </div>
+          <div id="rounding-three">
+            <button id="reset" class="btn">Reset</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="adjustable-timer" class="timer">
+        <p>Timer 1:</p>
+        <input type ="text" id=hr_in placeholder="hour">
+        <input type ="text" id=min_in placeholder="min">
+        <input type ="text" id=sec_in placeholder="sec">
+        <button onclick="set_all();" id="dit"> Edit Timer</button>
+       
+      </div>
+    </div>
+    <audio id="timer">
+        <source src="audio/timer.mp3" type="audio/mpeg">
+    </audio>
+    <script src="main.js"></script>
+  </body>
+</html>
